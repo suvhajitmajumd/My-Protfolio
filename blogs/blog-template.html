@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CHANGE THE TITLE FOR EACH ARTICLE -->
+    <title>Article Title | Suvhajit Majumder</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../tailwind.config.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    
+    <style>
+        /* Special typography styles for reading articles */
+        .article-content h2 { font-size: 1.875rem; font-weight: 800; color: white; margin-top: 2.5rem; margin-bottom: 1rem; }
+        .article-content h3 { font-size: 1.5rem; font-weight: 600; color: #e2e8f0; margin-top: 2rem; margin-bottom: 0.75rem; }
+        .article-content p { color: #94a3b8; font-size: 1.125rem; line-height: 1.75; margin-bottom: 1.5rem; }
+        .article-content ul, .article-content ol { color: #94a3b8; margin-bottom: 1.5rem; padding-left: 1.5rem; font-size: 1.125rem; }
+        .article-content li { margin-bottom: 0.5rem; list-style-type: disc; }
+        .article-content blockquote { border-left: 4px solid #6366f1; padding-left: 1rem; font-style: italic; color: #e2e8f0; margin-bottom: 1.5rem; background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 0 1rem 1rem 0; }
+        .article-content code { font-family: 'JetBrains Mono', monospace; background: rgba(255,255,255,0.1); padding: 0.2rem 0.4rem; border-radius: 0.25rem; font-size: 0.875em; color: #a855f7;}
+    </style>
+</head>
+<body class="custom-scrollbar relative">
+    <!-- Background Decoration -->
+    <div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-accent/10 rounded-full blur-[120px] animate-pulse-slow"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary/10 rounded-full blur-[120px] animate-pulse-slow"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="../index.html" class="text-2xl font-extrabold tracking-tighter glow-text">SM<span class="text-accent">.</span></a>
+            <a href="index.html" class="px-5 py-2 glass hover:bg-white/10 rounded-full text-sm font-bold transition-all flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Blogs
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-6 pt-32 pb-32">
+        
+        <!-- Article Header -->
+        <header class="mb-12 border-b border-white/10 pb-8">
+            <div class="flex items-center gap-4 mb-6">
+                <!-- UPDATE TAG COLOR HERE based on category -->
+                <span class="px-3 py-1 bg-success/20 text-success rounded-md text-xs uppercase tracking-widest font-bold">Tech</span>
+                <span class="text-sm font-mono text-slate-500">October 14, 2026 • 5 min read</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                The Art of Vibe Coding: Logic meets intuition
+            </h1>
+            
+            <p class="text-xl text-slate-400 font-light italic">
+                Exploring how relying on intuition, structured problem solving, and modern AI tools shapes a unique coding experience.
+            </p>
+        </header>
+
+        <!-- Hero Image -->
+        <div class="w-full h-64 md:h-96 rounded-3xl overflow-hidden mb-12 glass p-2">
+            <img src="https://picsum.photos/1200/600?random=20" alt="Cover Image" class="w-full h-full object-cover rounded-2xl">
+        </div>
+
+        <!-- Article Body -->
+        <article class="article-content">
+            
+            <p>Every great application begins as a blank canvas, but the way we decide to paint it is drastically shifting. In the traditional academic sense, programming is purely a rigid, mathematical structure. But if you have been building software lately, you know there is a rhythm to it.</p>
+            
+            <h2>What exactly is Vibe Coding?</h2>
+            
+            <p>Vibe coding isn't about ignoring best practices; rather, it is about shifting the cognitive load. Instead of spending two hours wrestling with a syntax error or a <code>webpack.config</code> rule, you delegate the repetitive mechanics to advanced agentic assistants.</p>
+            
+            <blockquote>
+                "Logic will get you from A to B. Imagination will take you everywhere." – Albert Einstein
+            </blockquote>
+
+            <p>Here are three core principles I follow to maintain this flow:</p>
+            <ul>
+                <li><strong>Clear communication</strong> over memorization of syntax.</li>
+                <li><strong>Aesthetics matter</strong> — beautifully written systems usually map to beautiful UI.</li>
+                <li><strong>Iterative execution</strong>, bridging the gap between thinking and rendering.</li>
+            </ul>
+
+            <h2>The Future of IDEs</h2>
+            
+            <p>We are going to stop writing boilerplate. Consider this: a framework like Next.js is incredibly powerful, but getting the basic structure up takes time. Now, we orchestrate the architecture verbally or through written logic blocks.</p>
+
+        </article>
+
+        <!-- Share & Author footer -->
+        <footer class="mt-20 pt-8 border-t border-white/10 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <img src="../assets/images/suvhajit_portrait.png" alt="Suvhajit" class="w-12 h-12 rounded-full object-cover border border-white/10">
+                <div>
+                    <div class="font-bold">Suvhajit Majumder</div>
+                    <div class="text-xs text-slate-500 font-mono">Author</div>
+                </div>
+            </div>
+            
+            <button class="px-5 py-2 glass hover:bg-accent/20 hover:text-accent transition-colors rounded-full text-sm font-bold">
+                Share Article
+            </button>
+        </footer>
+
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

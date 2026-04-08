@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork Previews | Suvhajit Majumder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../tailwind.config.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="custom-scrollbar">
+    <div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-accent/10 rounded-full blur-[120px] animate-pulse-slow"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary/10 rounded-full blur-[120px] animate-pulse-slow"></div>
+    </div>
+
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="../index.html" class="text-2xl font-extrabold tracking-tighter glow-text">SM<span class="text-accent">.</span></a>
+            <a href="../index.html" class="px-5 py-2 glass hover:bg-white/10 rounded-full text-sm font-bold transition-all flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 pt-32 pb-20">
+        <header class="mb-16">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-4">
+                Digital & <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Sketch Art</span>
+            </h1>
+            <p class="text-xl text-slate-400 max-w-2xl mb-8">
+                Ink & Imagination. A collection of my digital illustrations and pencil sketches, translating thoughts into visual narratives.
+            </p>
+            <a href="https://photos.google.com/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 glass hover:bg-white/10 rounded-full text-sm font-bold transition-all inline-flex items-center gap-2 border border-white/10 hover:border-secondary/50 group">
+                <svg class="w-5 h-5 text-secondary group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                <span>View Google Photos Album</span>
+                <svg class="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Art cards -->
+            <div class="group glass rounded-3xl p-4 transition-all hover:scale-[1.02]">
+                <div class="h-64 rounded-2xl bg-slate-800 mb-4 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-transparent z-10"></div>
+                    <img src="https://picsum.photos/600/400?random=10" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold">Cyberpunk Alley</h3>
+                        <span class="text-xs font-mono bg-white/10 px-2 py-1 rounded text-slate-300">Digital</span>
+                    </div>
+                    <p class="text-sm text-slate-400">An exploration of neon lighting and dystopian atmosphere in procreate.</p>
+                </div>
+            </div>
+
+            <div class="group glass rounded-3xl p-4 transition-all hover:scale-[1.02]">
+                <div class="h-64 rounded-2xl bg-slate-800 mb-4 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-slate-500/20 to-transparent z-10"></div>
+                    <img src="https://picsum.photos/600/400?random=11" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold">Portrait Study</h3>
+                        <span class="text-xs font-mono bg-white/10 px-2 py-1 rounded text-slate-300">Pencil</span>
+                    </div>
+                    <p class="text-sm text-slate-400">Graphite on paper, focusing on raw emotion and facial structure realism.</p>
+                </div>
+            </div>
+
+            <div class="group glass rounded-3xl p-4 transition-all hover:scale-[1.02]">
+                <div class="h-64 rounded-2xl bg-slate-800 mb-4 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-accent/20 to-transparent z-10"></div>
+                    <img src="https://picsum.photos/600/400?random=12" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold">Abstract Geometry</h3>
+                        <span class="text-xs font-mono bg-white/10 px-2 py-1 rounded text-slate-300">Vector</span>
+                    </div>
+                    <p class="text-sm text-slate-400">Mathematical art generated through vector curves and vibrant gradients.</p>
+                </div>
+            </div>
+            
+            <div class="group glass rounded-3xl p-4 transition-all hover:scale-[1.02]">
+                <div class="h-64 rounded-2xl bg-slate-800 mb-4 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-green-500/20 to-transparent z-10"></div>
+                    <img src="https://picsum.photos/600/400?random=13" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold">Nature's Wrath</h3>
+                        <span class="text-xs font-mono bg-white/10 px-2 py-1 rounded text-slate-300">Digital</span>
+                    </div>
+                    <p class="text-sm text-slate-400">Fantasy conceptual piece blending elemental forces in a chaotic storm.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../script.js"></script>
+</body>
+</html>
